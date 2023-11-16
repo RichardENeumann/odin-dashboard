@@ -2,26 +2,27 @@
     margin: 0;
     padding: 0;
 }
-a {
+nav a {
     text-decoration: none;
     color: white;
 }
-a:visited {
+nav a:visited {
     color: white;
 }
-a:hover {
+nav a:hover {
     color: black;
 }
-a:visited:hover {
+nav a:visited:hover {
     color: black;
 }
 html {
     height: 100vh;
 }
 body {
+    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 1fr 6fr / 1fr 4fr;
 }
 header {
     grid-area: 1 / 2 / 2 / 3;
@@ -37,7 +38,7 @@ nav {
     gap: 3rem;
     color: white;
     background-color: #1992D4;
-    font-family: Arial, Helvetica, sans-serif;
+    ;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -58,18 +59,43 @@ nav > span > img {
 }
 main {
     grid-area: 2 / 2 / 3 / 3;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #E2E8F0;
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+
 article {
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: left;
+    gap: 1rem; 
+}
+article > h1 {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: left;
+}
+.project {
+    
+    width: 100%;
+    height: 30ch;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.52);
+    border-left: 6px solid #F0B429;
+    border-radius: 12px;
+    background-color: white;
+    color: gray;
 }
 .sidebox {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    flex: 1;
+}
+.sidebox ul {
+    padding: 1rem;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.52);
+    background-color: white;
+    border-radius: 12px;
+    list-style: none;
 }
