@@ -31,7 +31,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     display: grid;
-    grid-template: 1fr 6fr / 1fr 4fr;
+    grid-template: 1fr 6fr / 2fr 9fr;
 }
 header {
     padding: 1rem 3rem;
@@ -112,7 +112,7 @@ nav {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     color: white;
     background-color: #1992D4;
     font-weight: bold;
@@ -139,6 +139,7 @@ main {
     background-color: #E2E8F0;
     display: grid;
     grid-template-columns: 4fr 1fr;
+    gap: 2rem;
 }
 article {
     padding: 1rem;
